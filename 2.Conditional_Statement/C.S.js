@@ -5,6 +5,17 @@ if (count == 3){
     console.log('Count is 3')             
 }
 
+
+let test = 50;
+if (test == 100) {
+    console.log("Excellent!!!")
+} if (test >= 50) {
+    console.log("Above pass-mark")
+} else if (test <= 50) {
+    console.log("Failed!!!")
+}
+
+
 let age = 2;
 if (age >= 18) {
     console.log("You are an adult.")
@@ -78,3 +89,13 @@ let result = (a == b) ? 'equal' : 'not equal';
 console.log(result)
 
 
+let d = Date();
+console.log(d)
+
+try {
+    notAFunction();
+} catch(err) {
+    console.log(err);        // ReferenceError: notAFunction is not defined
+} finally {
+    console.log('This will run regardless of the errors')
+}

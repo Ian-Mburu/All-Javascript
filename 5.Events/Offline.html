@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 20px 60px;
+            margin: 0 auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <script>
+        function handleOffline() {
+            alert('You are now offline')
+             // Add any additional logic you want to execute when the user comes back online
+        }
+
+        function handleOnline() {
+            alert("You are back online!");
+            // Add any additional logic you want to execute when the user comes back online
+        }
+
+        // Register event listeners for offline and online events
+        window.addEventListener('offline', handleOffline);
+        window.addEventListener('online', handleOnline);
+
+        // Initial check to see if the user is offline when the page loads
+        if (!navigator.onLine) {
+            handleOffline();
+        }
+
+    </script>
+
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Lorem</td>
+            <td>Ipsum</td>
+            <td>loremipsum@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Mark</td>
+            <td>Mwaks</td>
+            <td>markmwas@gmail</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Lenny</td>
+            <td>Munga</td>
+            <td>lennymunga@gmail.com</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Ian</td>
+            <td>Jox</td>
+            <td>ianjox@gmail.com</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Kylian</td>
+            <td>Mbpp</td>
+            <td>kylianmbpp@gmail.com</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Lionel</td>
+            <td>Messi</td>
+            <td>lionelmessi@gmail.com</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>Luka</td>
+            <td>Modric</td>
+            <td>lukamodric@gmail.com</td>
+        </tr>
+        
+       
+    </table>
+</body>
+</html>

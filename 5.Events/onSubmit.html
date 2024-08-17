@@ -1,0 +1,38 @@
+<!--onSubmit Event -- this events occurs when trying to submit a form
+
+The following example shows how to use onsubmit. Here we are calling a validate() function before submitting a form data to the webserver. If validate() function returns true, the form will be submitted, otherwise it will not submit the data.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onSubmit</title>
+</head>
+<body>
+    
+    <script >
+        function validation() {
+            // All validation logic goes here 
+
+            var isValid=true;
+
+            // Perform your validation checks, set isValid to false if any validation fails
+
+            return isValid;
+        }
+    </script>
+
+    <form method="GET" action="t.cgi" onsubmit="return validation()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+</body>
+</html>
